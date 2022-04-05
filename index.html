@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ominifood</title>
+    <meta  name="description" content="Ominifood is an AI-powered food subscription that will make you eat healthy again ,365 days per year .It's tailored to your personal tastes and nutritional needs.">
+    <title>Ominifood &mdash;Never cook again</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="Queries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="icon" href="/logos/favicon.png"/>
+    <link rel="android-icon" href="/logos/faviconandroid.png"/>
+    <link rel="manifest" href="manifest.webmanifest"/>
+    <!-- <link rel="stylesheet" href="Script.js"> -->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,21 +20,25 @@
 <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:ital,wght@0,500;1,700&display=swap" rel="stylesheet">  -->
 </head>
 <body>
-    <header class="header">
+    <header class="header sticky">
         <a href="#">
             <img src="omnifood-logo.png" class="logo" alt="ominifood logo">
         </a>
         <nav class="main-nav">
             <ul class="main-nav-list">
-                <li><a class="main-nav-link" href="#">section1</a></li>
-                <li><a class="main-nav-link" href="#">section2</a></li>
-                <li><a class="main-nav-link" href="#">section3</a></li>
-                <li><a class="main-nav-link" href="#">section4</a></li>
-                <li><a class="main-nav-link nav-cta" href="#">section5</a></li>
+                <li><a class="main-nav-link" href="#how">How it works</a></li>
+                <li><a class="main-nav-link" href="#meals">Meals</a></li>
+                <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+                <li><a class="main-nav-link" href="#testimonials">Testimonial</a></li>
+                <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
                 
             </ul>
             
         </nav>
+        <button class="btn-mobile-nav">
+            <ion-icon  class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon  class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
     </header>
     <main>
         <section class="section-hero">
@@ -39,8 +49,8 @@
                     <p class="hero-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, velit nihil! Amet veniam cum similique!
                     </p>
-                    <a href="#" class="btn btn--full margin-right-sn">start eating well</a>
-                    <a href="#" class="btn btn--outline">learn more &darr;</a>
+                    <a href="#cta" class="btn btn--full margin-right-sm">start eating well</a>
+                    <a href="#how" class="btn btn--outline">learn more &darr;</a>
                     <div class="delivered-meals">
                         <div class="delivered-img">
                             <img src="customers/customer1.jpg" alt="delivered boy image">
@@ -75,7 +85,7 @@
 
             </div>
         </section>
-        <section class="section-hover">
+        <section class="section-hover" id="how">
             <div class="container">
                 <span class="subheading"> How itsa works</span>
                 <h2 class="heading-secondary"> your daily dose of health in 3 simple steps</h2>
@@ -120,7 +130,7 @@
         </section>
     
     
-        <section class="section-meals">
+        <section class="section-meals" id="meals">
             <div class="container">
                 <span class="subheading">Meals</span>
                 <h2 class="heading-secondary">
@@ -184,7 +194,7 @@
             </div>
             <a class="recipe" href="#">see all recipe &rarr;</a>
         </section>
-        <section class="section-testimonials">
+        <section class="section-testimonials" id="testimonials">
             <div class="testimonial-container">
             <span class="subheading">Testimonials</span>
             <h2 class="heading-secondary">
@@ -262,7 +272,7 @@
                 </figure>
             </div>
         </section>
-        <section class="section-pricing">
+        <section class="section-pricing" id="pricing">
             <div class="container">
                 <span class="subheading">Pricing</span>
                 <h2 class="heading-secondary">
@@ -324,7 +334,7 @@
                         </li>
                     </ul>
                     <div class="plan-sign-up">
-                        <a href="#" class="btn btn--full">Start eatig well</a>
+                        <a href="#cta" class="btn btn--full">Start eatig well</a>
                     </div>
                 </div>
             </div>
@@ -366,7 +376,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-cta">
+        <section class="section-cta" id="cta">
             <div class="container">
                 <div class="cta">
                     <div class="cta-text-box">
@@ -374,17 +384,17 @@
                         <p class="cta-text">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda aspernatur veritatis, aperiam nihil molestiae iste sit quas itaque quasi consectetur voluptatum magni, quidem atque ut non neque consequatur eligendi deleniti!
                         </p>
-                        <form class="cta-form" action="#">
+                        <form class="cta-form" action="#" name="sign-up" netlify> 
                             <div>
                                 <label for="full-name">Full name</label>
-                                <input id="full-name" type="text" placeholder="User Name" required>
+                                <input id="full-name" type="text" name="full-name" placeholder="User Name" required>
                             </div>
                             <div>
                                 <label for="email">Email</label>
-                                <input id="email" type="email" placeholder="User Email" required>
+                                <input id="email" type="email" name="Email" placeholder="User Email" required>
                             </div>
                             <div>
-                                <label for="select-where">Where did you hear from us?</label>
+                                <label for="select-where" name="select-where">Where did you hear from us?</label>
                                 <select name="" id="select-where" required>
                                     <option value="">please choose one option</option>
                                     <option value="freinds">friend and famil</option>
@@ -462,6 +472,7 @@
     </footer>
     
     <!-- <div class="test">test</div> -->
+    <script src="js/Script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>
